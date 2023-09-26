@@ -1,0 +1,123 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/bgImage.jpeg);
+  background-position: center;
+  background-size: cover;
+  /* background-color: #352F44; */
+}
+
+/* ----form----- */
+.first-row-container {
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+
+}
+
+.form {
+  padding: 40px 18px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-container {
+  padding: 40px 18px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 44rem;
+}
+.timer-container {
+  color: white;
+  background: #352F44;
+  opacity: 0.5;
+  width: 120px;
+  height:120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+#inputTask {
+  padding: 12px;
+  margin-right: 12px;
+  width: 400px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+#buttonAdd {
+  padding: 12px 32px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: #e19898;
+  color: #fff6dc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ----lanes----- */
+
+.lanes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 24px 32px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.heading {
+  font-size: 22px;
+  /* font-weight: bold; */
+  margin-bottom: 8px;
+  color: #a2678a;
+}
+
+.swimlanes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  background: #f4f4f4;
+  opacity: 0.6;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 4px;
+  width: 400px;
+  min-height: 120px;
+  flex-shrink: 0;
+}
+
+.task {
+  background: white;
+  color: black;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: move;
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: rgb(50, 50, 50);
+  color: white;
+}

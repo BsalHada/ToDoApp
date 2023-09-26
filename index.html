@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management To Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="first-row-container" id="first-row-container">
+            <div class="form-container" id="form-container">
+                <form id="form" class="form">
+                    <input type="text" placeholder="Task to do" id="inputTask">
+                    <button id="buttonAdd" class="buttonAdd"> Add + </button>
+                </form>
+                <div class="timer-container" id="timer-container"> </div>
+            
+            </div>
+            </div>
+
+        </div>
+       
+        <div class="lanes">
+            <div class="swimlanes" id="toDo-swimlane">
+                <h2 class="heading"> To Do </h2>
+                <!-- <p class="task" draggable="true">Learn Basic Concept of Js</p>
+                <p class="task" draggable="true">Build Logic Solving Techniques</p>
+                <p class="task" draggable="true">Communication Skills Set</p> -->
+            </div>
+            <div class="swimlanes" id="doing-swimlane">
+                <h2 class="heading"> Doing </h2>
+                <p class="task" draggable="true">Learning Advance Html css</p>
+                <p class="task" draggable="true">Minimalistic Design and Management concept</p>
+            </div>
+            <div class="swimlanes" id="done-swimlane">
+                <h2 class="heading"> Done </h2>
+                <p class="task" draggable="true">Gym Workout</p>
+                <p class="task" draggable="true">Morning Meal</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
